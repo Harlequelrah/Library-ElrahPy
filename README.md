@@ -4,8 +4,8 @@ Passioné par la programmation et le développement avec python je me lance dans
 
 # Installation
 
-- Avec Github : git clone https://github.com/Harlequelrah/My_Python_Library"
-- Avec pip : pip install harlequelrah
+- Avec Github : git clone https://github.com/Harlequelrah/Library-harlequelrah_py"
+- Avec pip : pip install harlequelrah_py
 
 # Utilisation
 
