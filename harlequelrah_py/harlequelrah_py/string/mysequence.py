@@ -18,21 +18,18 @@ def supp_all(liste, element):
     return liste
 
 
-
-
-
 # fonction qui renvoie True si la chaine/liste en parametre est un palindrome et False si ce n est pas un palindrome
-def pal(nom):
-    if nom.lower() == nom.lower()[::-1]:
+def ispalindrome(seq):
+    if seq.lower() == seq.lower()[::-1]:
         return True
     else:
         return False
 
 
 # renvoie le nombre d occurence de chaque lettre dans la chaine
-def nbr_let(txt, x=None):
+def nbr_element(seq, x=None):
     lettre = {}
-    for i in txt:
+    for i in seq:
         lettre[i] = lettre.get(i, 0) + 1
     if x == None:
         return dict(sorted(lettre.items()))
@@ -40,7 +37,7 @@ def nbr_let(txt, x=None):
         return lettre[x]
 
 
-
+print()
 
 
 # : pred en paramete une liste ou une chaine et renvoie la liste des majuscule et des minuscule avec un seul argument
@@ -49,7 +46,7 @@ def nbr_let(txt, x=None):
 # renvoie une liste avec le nombre de minuscule et majuscule
 
 
-def casse(char_liste, casse=None):
+def show_casse(char_liste, casse=None):
     Up = []
     Lw = []
     m = 0
@@ -74,5 +71,3 @@ def casse(char_liste, casse=None):
         return sorted(Up)
     elif casse == -1:
         return [m, M]
-
-

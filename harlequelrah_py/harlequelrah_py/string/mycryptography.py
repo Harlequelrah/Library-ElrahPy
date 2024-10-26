@@ -25,6 +25,9 @@ def verif_cesar(mot):
     return dic
 
 
+
+
+
 # 3:prend en paramètre  une chaine de caractère codé et renvoie un dictionnaire composé des possibles mot claires
 def z_cesar(chaine):
 

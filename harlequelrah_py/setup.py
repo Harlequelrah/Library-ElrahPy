@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setup(
     name="harlequelrah_py",
-    version="0.1.3",
+    version="0.1.4",
     packages=find_packages(),
     description="Package personnalisé pour faciliter la programmation et le développement avec python",
     long_description=long_description,
@@ -19,6 +19,6 @@ setup(
     ],
     python_requires=">=3.10",
     install_requires=[
-        "numpy>=1.18.0",
+        "numpy>=1.18.0","turtle","python-dateutil,"
     ],
 )
