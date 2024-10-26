@@ -3,7 +3,7 @@ import turtle
 t = turtle.Turtle()
 s = turtle.Screen()
 
-# 1 : fonction pour tracer une figure d une forme geometrique de différentes couleurs avec le rayon spécifié.
+# fonction pour tracer une figure d une forme geometrique de différentes couleurs avec le rayon spécifié.
 
 
 def figure(nbr_figure, rayon, nbr_cote=None, position=[], couleur=[], orientation=0):
@@ -30,7 +30,7 @@ def figure(nbr_figure, rayon, nbr_cote=None, position=[], couleur=[], orientatio
     t.hideturtle()
 
 
-# 2 pour dessiner un rectangle
+# pour dessiner un rectangle
 def rectangle(L, l, inside_color="white", line_color="black"):
     t.color(line_color)
     t.begin_fill()
@@ -43,17 +43,4 @@ def rectangle(L, l, inside_color="white", line_color="black"):
     t.end_fill()
 
 
-# heart
-def heart(inside_color="white", line_color="black", background_color="white"):
-    s.bgcolor = background_color
-    t.color(line_color)
-    t.begin_fill()
-    t.fillcolor(inside_color)
-    t.lt(140)
-    t.fd(180)
-    t.circle(-90, 200)
-    # t.lt(120)
-    t.seth(60)
-    t.circle(-90, 200)
-    t.fd(180)
-    t.end_fill()
+

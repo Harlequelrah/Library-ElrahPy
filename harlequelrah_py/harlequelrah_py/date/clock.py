@@ -2,12 +2,13 @@ from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
 
+# renvoie un True si c'est une année bisectile et False sinon
 def is_bisectile(year):
     if year.isdigit():
         year = int(year)
     return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
 
-
+# renvoie un interval de temps d'une date à aujourdhui
 def interval(
     birthday_year: int, birthday_month: int, birthday_day: int, type: str = None
 ):
@@ -25,4 +26,4 @@ def interval(
             return None
 
 
-print(interval(2004, 4, 10, "m"))
+

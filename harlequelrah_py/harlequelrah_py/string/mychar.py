@@ -1,4 +1,4 @@
-# 1: fonction qui verifie si un caractere est une voyelle
+#  fonction qui verifie si un caractere est une voyelle
 def voy(x):
 
     voyelle = [
@@ -69,7 +69,7 @@ def voy(x):
         return False
 
 
-# 2: fonction qui renvoie le nombre de voyelle dans une chaine
+#  fonction qui renvoie le nombre de voyelle dans une chaine
 def nbr_voy(y):
     w = 0
     for v in y:
@@ -80,18 +80,12 @@ def nbr_voy(y):
 
 # 3:fonction qui prend en parametre 3 caracteres et verifie si le  char est compris entre char_1 et char_2
 def inter_char(char, char_1, char_2):
-    if ord(char) >= ord(char_1) and ord(char) <= ord(char_2):
-        return True
-    elif ord(char) >= ord(char_1) and ord(char) <= ord(char_2):
-        return False
-    else:
-        return None
+    return ord(char) >= ord(char_1) and ord(char) <= ord(char_2)
+
 
 
 # 4:fonction qui renvoie True si le caractere est en minuscule , false si il est en majuscule en None si aucun des deux cas
 import string
-
-
 def minusmaj(char):
     if char in string.ascii_lowercase:
         return True
