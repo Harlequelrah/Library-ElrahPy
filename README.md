@@ -282,7 +282,7 @@ Le sous-module `geometric_shape`  permet de dessiner des formes géométrique
    Exemple d'utilisation :
 
    ```python
-   from harlequelrah_py.geometric_shape import figure
+   from harlequelrah_py.turtle.geometric_shape import figure
 
    figure(
        nbr_figure=3,
@@ -310,7 +310,7 @@ Le sous-module `geometric_shape`  permet de dessiner des formes géométrique
    Exemple d'utilisation :
 
    ```python
-   from harlequelrah_py.geometric_shape import rectangle
+   from harlequelrah_py.turtle.geometric_shape import rectangle
 
    rectangle(
        L=100,
@@ -338,7 +338,7 @@ Le sous-module `particular_shape`  permet de dessiner des formes particulières
    Exemple d'utilisation :
 
    ```python
-   from harlequelrah_py.particular_shape import heart
+   from harlequelrah_py.turtle.particular_shape import heart
 
    heart(
        inside_color="red",
