@@ -1,6 +1,0 @@
-char
-date
-files
-integer
-turtle
-types
