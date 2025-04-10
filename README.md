@@ -1,8 +1,8 @@
-# Harlequelrah
+# Description
 
 Passionné par la programmation et le développement en Python, je crée une bibliothèque personnalisée pour renforcer mes compétences, améliorer ma productivité et partager mon expertise avec la communauté.
 
-## Installation
+# Installation
 
 - **Avec GitHub :**
 
@@ -16,13 +16,13 @@ Passionné par la programmation et le développement en Python, je crée une bib
   pip install harlequelrah_py
   ```
 
-## Utilisation
+# Documentation
 
 Ce package contient plusieurs modules utiles pour divers calculs et manipulations de données. Voici un aperçu de leurs fonctionnalités.
 
-### Module integer
+## Module integer
 
-#### 1. Sous Module `base_converter`
+### 1. Sous Module `base_converter`
 
 Le module `base_converter` contient des fonctions pour effectuer des conversions de base numérique.
 
@@ -142,7 +142,7 @@ Le module `math_utils` contient des fonctions utilitaires mathématiques.
   - **Retourne :**
     - `int` : Le factoriel de `n`.
 
-### Module date
+## Module date
 
 ### 1. Sous-module `clock`
 
@@ -269,7 +269,7 @@ insline("file.txt", 2, "Ligne insérée")  # Insère "Ligne insérée" à la 2è
   - **Retourne :**
     - `None` : La fonction ne retourne rien.
 
-### Module `turtle`
+## Module `turtle`
 
 #### Sous-module `geometric_shape`
 
@@ -282,7 +282,7 @@ Le sous-module `geometric_shape`  permet de dessiner des formes géométrique
    Exemple d'utilisation :
 
    ```python
-   from harlequelrah_py.turtle.geometric_shape import figure
+   from harlequelrah_py.geometric_shape import figure
 
    figure(
        nbr_figure=3,
@@ -310,7 +310,7 @@ Le sous-module `geometric_shape`  permet de dessiner des formes géométrique
    Exemple d'utilisation :
 
    ```python
-   from harlequelrah_py.turtle.geometric_shape import rectangle
+   from harlequelrah_py.geometric_shape import rectangle
 
    rectangle(
        L=100,
@@ -338,7 +338,7 @@ Le sous-module `particular_shape`  permet de dessiner des formes particulières
    Exemple d'utilisation :
 
    ```python
-   from harlequelrah_py.turtle.particular_shape import heart
+   from harlequelrah_py.particular_shape import heart
 
    heart(
        inside_color="red",
@@ -353,7 +353,7 @@ Le sous-module `particular_shape`  permet de dessiner des formes particulières
        - `background_color` : `str` - Couleur de fond
    - **Retour** : `None`
 
-### Module `string`
+## Module `string`
 #### Sous-Module `mychar`
 Le sous-module `mychar`  permet de faire des opérations spécifiques sur les chaines de caractère
 
@@ -514,6 +514,105 @@ z_cesar("Erqmrxu Phz") # Renvoie un dictionnaire des possibilités de mots clair
     - chaine (`string`) :  La chaîne de caractères codée à analyser
   - **Retourne** :
     - `dict` :  Un dictionnaire où chaque clé est un décalage et chaque valeur est la chaîne possible pour ce décalage.
+
+## Module `types`
+
+Ce module comporte des classes utilisées comme types ou structure de données
+
+### Sous Module `landmark`
+Ce sous module comporte les classes  LandMark et Point
+
+**`Point`**
+
+- `__init__`:
+
+  - **paramètres** :
+
+    - x : **int**  représente l'abscisse
+
+    - y : **int** représente l'ordonnée
+
+
+**`LandMark`** :
+
+- `__init__` :
+
+  - **paramètres** :
+
+    - type_land_mark: **type** , default Any
+
+- land_marks: **dict[Point,type_land_mark:type]**
+
+- `get_point` : retourne le point dans le repere à partir de ces coordonnées
+
+  - **paramètres**  :
+
+    - point : **Point**
+
+- `set_point` : change un point et sa valeur
+
+  - **paramètres**  :
+
+    - point : **Point**
+
+    - obj : **type_land_mark**
+
+
+- `add_point` : ajoute un point et sa valeur
+
+  - **paramètres**  :
+
+    - point : **Point**
+
+    - obj : **type_land_mark**
+
+- `is_valid_obj` : verifie si un objet est valide du type **type_land_mark**
+
+  - **paramètres**  :
+
+    - obj : **type_land_mark**
+
+  - **sortie** : **bool** -
+
+- `exist_point` : verifie si un point existe
+
+  - **paramètres**  :
+
+    - point : **Point**
+
+  - **sortie** : **bool**
+
+
+- `remove_point` : retire un point du repère
+
+  - **paramètres**  :
+
+    - point : **Point**
+
+- `list_marks` : liste les coordonnées et leurs valeurs
+
+- `land_marks` **@property**
+
+`ex` :
+
+```python
+my_land = LandMark()
+my_land.add_point(Point(2,5),55)
+my_land.list_marks()
+my_land.set_point(Point(2,5),"mdr")
+my_land.list_marks()
+my_land.remove_point(Point(2,5))
+my_land.list_marks()
+
+
+new_land = LandMark(type_land_mark=int)
+new_land.add_point(Point(1,2),2)
+new_land.add_point(Point(2,3),3)
+new_land.list_marks()
+new_land.add_point(Point(1,2),"hi") # Provoque une erreur
+```
+
+
 
 ## Contact ou Support
 Pour des questions ou du support, contactez-moi à maximeatsoudegbovi@gmail.com ou au (+228) 91 36 10 29.

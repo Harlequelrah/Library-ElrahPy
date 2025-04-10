@@ -1,4 +1,4 @@
-from mychar import minusmaj
+from .mychar import minusmaj
 
 
 #  fonction qui prend une chaine de caractere/ liste et un caractere et renvoie une liste de toutes les occurences du caractere
