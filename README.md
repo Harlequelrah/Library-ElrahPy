@@ -7,13 +7,17 @@ Passionné par la programmation et le développement en Python, je crée une bib
 - **Avec GitHub :**
 
   ```bash
-  git clone https://github.com/Harlequelrah/Library-harlequelrah_py
+  git clone https://github.com/Harlequelrah/Library-ElrahPy
+  ```
+
+  ```python
+  pip install -e "Library-ElrahPy/elrahpy"
   ```
 
 - **Avec pip :**
 
   ```bash
-  pip install harlequelrah_py
+  pip install elrahpy
   ```
 
 # Documentation
