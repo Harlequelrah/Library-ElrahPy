@@ -15,6 +15,6 @@ setup(
     license="LGPL-3.0-only",
     python_requires=">=3.10",
     install_requires=[
-        "numpy>=1.18.0","turtle","python-dateutil"
+        "numpy>=1.18.0","python-dateutil"
     ],
 )
