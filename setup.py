@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setup(
     name="elrahpy",
-    version="0.1.5",
+    version="0.1.6",
     packages=find_packages(),
     description="Package pour renforcer mes compétences, améliorer ma productivité et partager mon expertise avec la communauté ",
     long_description=long_description,
