@@ -23,6 +23,7 @@ Passionné par la programmation et le développement en Python, je crée une bib
 # Documentation
 
 Toute la documentation se trouve dans le /docs
+et sur `https://harlequelrah.github.io/Library-ElrahPy/docs/documentation`
 
 ## Test
 
