@@ -2,6 +2,8 @@ import turtle
 
 t = turtle.Turtle()
 s = turtle.Screen()
+
+
 # heart
 def heart(inside_color="white", line_color="black", background_color="white"):
     s.bgcolor = background_color

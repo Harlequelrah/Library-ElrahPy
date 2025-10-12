@@ -41,6 +41,3 @@ def rectangle(L, l, inside_color="white", line_color="black"):
         t.fd(l)
         t.rt(90)
     t.end_fill()
-
-
-

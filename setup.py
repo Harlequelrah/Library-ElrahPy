@@ -1,10 +1,11 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
+
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
     name="elrahpy",
-    version="0.1.6",
+    version="0.1.7",
     packages=find_packages(),
     description="Package pour renforcer mes compétences, améliorer ma productivité et partager mon expertise avec la communauté ",
     long_description=long_description,
@@ -14,7 +15,5 @@ setup(
     url="https://github.com/Harlequelrah/Library-ElrahPy",
     license="LGPL-3.0-only",
     python_requires=">=3.10",
-    install_requires=[
-        "numpy>=1.18.0","python-dateutil"
-    ],
+    install_requires=["numpy>=1.18.0", "python-dateutil", "pytest", "pytest-mock"],
 )
