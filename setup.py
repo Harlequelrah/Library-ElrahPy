@@ -15,5 +15,5 @@ setup(
     url="https://github.com/Harlequelrah/Library-ElrahPy",
     license="LGPL-3.0-only",
     python_requires=">=3.10",
-    install_requires=["numpy>=1.18.0", "python-dateutil", "pytest", "pytest-mock"],
+    install_requires=["python-dateutil", "pytest", "pytest-mock"],
 )

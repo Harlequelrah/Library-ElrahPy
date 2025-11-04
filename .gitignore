@@ -3,3 +3,6 @@ elrahpy.egg-info/
 dist/
 build/
 env
+.coverage
+htmlcov
+.coveragerc
