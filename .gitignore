@@ -1,6 +1,6 @@
 __pycache__/
 elrahpy.egg-info/
-# .pytest_cache
+.pytest_cache
 dist/
 build/
 env
