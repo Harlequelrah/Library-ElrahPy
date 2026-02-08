@@ -2,7 +2,7 @@
 
 Ce package contient plusieurs modules utiles pour divers calculs et manipulations de données. Voici un aperçu de leurs fonctionnalités.
 
-## Module intkit
+## I- Module intkit
 
 ### 1. Sous Module `math_primes`
 
@@ -102,11 +102,11 @@ Le module `math_utils` contient des fonctions utilitaires mathématiques.
   result = fibonacci(10)  # Résultat : [0, 1, 1, 2, 3, 5, 8]
   ```
 
-## Module datekit
+## II- Module utils
 
-### 1. Sous-module `clock`
+### 1. Sous-module `datekit`
 
-Le sous-module `clock` contient des fonctions utiles pour les dates.
+Le sous-module `datekit` contient des fonctions utiles pour les dates.
 
 - `is_bisectile` : Renvoie `True` si c'est une année bissextile et `False` sinon.
 
@@ -121,7 +121,7 @@ Le sous-module `clock` contient des fonctions utiles pour les dates.
   - **exemple** :
 
   ```python
-  from elrahpy.datekit.clock import is_bisectile
+  from elrahpy.utils.datekit import is_bisectile
 
   result = is_bisectile(2020)  # Résultat : True
   ```
@@ -146,7 +146,7 @@ Le sous-module `clock` contient des fonctions utiles pour les dates.
   - **exemple :**
 
 ```python
-from elrahpy.datekit.clock import get_interval
+from elrahpy.utils.datekit import get_interval
 from datetime import datetime
 # Date du jour : 10/10/25
 result_years = get_interval(start_date=datetime(2025,1,1), "year")
@@ -159,11 +159,9 @@ result_days = get_interval(start_date=datetime(2025,1,1),end_date=datetime(2025,
 # Résultat : (0,9,282)
 ```
 
-## Module `fileskit`
+### 2. Sous Module `fileskit`
 
-### Sous-module `filestools`
-
-Le sous-module `filestools` contient des fonctions pour gérer les opérations sur les fichiers.
+Le sous-module `fileskit` contient des fonctions pour gérer les opérations sur les fichiers.
 
 - `rewrite_content` : Recopie le contenu d'un fichier source vers un fichier de destination en plusieurs blocs.
 
@@ -180,7 +178,7 @@ Le sous-module `filestools` contient des fonctions pour gérer les opérations s
   - **exemple** :
 
 ```python
-  from elrahpy.fileskit.filestools import rewrite_content
+  from elrahpy.utils.fileskit import rewrite_content
 
   rewrite_content("source.txt", "destination.txt")  # Copie le contenu de source.txt à destination.txt
 ```
@@ -198,7 +196,7 @@ Le sous-module `filestools` contient des fonctions pour gérer les opérations s
   - **exemple** :
 
 ```python
-from elrahpy.fileskit.filestools import reset_file
+from elrahpy.utils.fileskit import reset_file
  reset_file("file.txt")  # Efface le contenu de file.txt
 ```
 
@@ -238,7 +236,7 @@ from elrahpy.fileskit.filestools import reset_file
   - **exemple** :
 
 ```python
-from elrahpy.fileskit.filestools import replace_line
+from elrahpy.utils.fileskit import replace_line
 replace_line("file.txt", 1, "Nouvelle ligne 1")  # Remplace la 1ère ligne de file.txt par "Nouvelle ligne 1"
 ```
 
@@ -259,7 +257,7 @@ replace_line("file.txt", 1, "Nouvelle ligne 1")  # Remplace la 1ère ligne de fi
   - **exemple** :
 
 ```python
-from elrahpy.fileskit.filestools import insert_line
+from elrahpy.utils.fileskit import insert_line
 insert_line("file.txt", 2, "Ligne insérée")  # Insère "Ligne insérée" à la 2ème position de file.txt
 ```
 
@@ -278,7 +276,7 @@ insert_line("file.txt", 2, "Ligne insérée")  # Insère "Ligne insérée" à la
   - **exemple** :
 
 ```python
-from elrahpy.fileskit.filestools import delete_line
+from elrahpy.utils.fileskit import delete_line
 delete_line("file.txt", 2)
 # Suppression de la ligne à la 2ème position de file.txt
 ```
@@ -298,14 +296,14 @@ delete_line("file.txt", 2)
   - **exemple** :
 
 ```python
-from elrahpy.fileskit.filestools import delete_line_startswith
+from elrahpy.utils.fileskit import delete_line_startswith
 delete_line_startswith(file="file.txt",marker="@")
 # Suppression des lignes de file.txt commençant par @
 ```
 
-## Module `turtlekit`
+## III- Module `turtlekit`
 
-### Sous-module `geometric_shape`
+### 1. Sous-module `geometric_shape`
 
 Le sous-module `geometric_shape` permet de dessiner des formes géométrique
 
@@ -369,7 +367,7 @@ rectangle(
 )
 ```
 
-### Sous-module `particular_shape`
+### 2. Sous-module `particular_shape`
 
 Le sous-module `particular_shape` permet de dessiner des formes particulières
 
@@ -397,9 +395,9 @@ heart(
 )
 ```
 
-## Module `strkit`
+## IV- Module `strkit`
 
-### Sous-Module `charscraft`
+### 1. Sous-Module `charscraft`
 
 Le sous-module `charscraft` permet de faire des opérations spécifiques sur les chaines de caractère
 
@@ -494,7 +492,7 @@ ispalindrome("radar") # Renvoie True
 ispalindrome("hello") # Renvoie False
 ```
 
-### Sous-Module `sequencescraft`
+### 2. Sous-Module `sequencescraft`
 
 Le sous-module `sequencescraft` permet de faire des opérations spécifiques sur les chaines de caractère et sequences.
 
@@ -585,11 +583,11 @@ separate_case(txt=txt)
 
 ```
 
-## Sous-Module `cryptokit`
+## V- Module `cryptokit`
 
 Le sous-module `cryptokit` permet de faire des opérations spécifiques sur le codage par cryptographie.
 
-### Sous-Module `cesar`
+### 1. Sous-Module `cesar`
 
 Ce sous module contient des utilitaires pour la cryptographie avec la méthode cesar.Ils ne sont valides que les élements de `string.printable`.
 
@@ -672,11 +670,11 @@ from elrahpy.cryptokit.cesar import z_cesar
 z_cesar("Erqmrxu Phz") # Renvoie un dictionnaire des possibilités de mots clairs pour chaque mot de la chaîne ex :{0: 'Erqmrxu Phz', 1: 'Dqplqwt Ogy', 2: 'Cpokpvs Nfx', 3: 'Bonjour Mew'....}
 ```
 
-## Module `typeskit`
+## VI- Module `typeskit`
 
 Ce module comporte des classes et types utilitaires .
 
-### Sous Module `landmark`
+### 1. Sous Module `landmark`
 
 Ce sous module comporte les classes LandMark et Point
 

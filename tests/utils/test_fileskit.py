@@ -1,6 +1,4 @@
 import os
-
-from elrahpy.utils.fileskit import fileskit
 from elrahpy.utils.fileskit import (
     delete_line,
     delete_line_startswith,

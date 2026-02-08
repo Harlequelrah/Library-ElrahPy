@@ -1,6 +1,6 @@
 [project]
 name = "elrahpy"
-version = "0.1.7"
+version = "0.1.8"
 description = "Package pour renforcer mes compétences, améliorer ma productivité et partager mon expertise avec la communauté"
 readme = "README.md"
 requires-python = ">=3.14"

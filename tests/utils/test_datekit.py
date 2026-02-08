@@ -1,7 +1,7 @@
 from datetime import datetime
 
 import pytest
-from elrahpy.utils.datekit import datekit
+from elrahpy.utils import datekit
 
 
 @pytest.mark.parametrize(
