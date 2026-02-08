@@ -1,6 +1,6 @@
 [project]
 name = "elrahpy"
-version = "0.1.7"
+version = "0.1.8"
 description = "Package pour renforcer mes compétences, améliorer ma productivité et partager mon expertise avec la communauté"
 readme = "README.md"
 requires-python = ">=3.14"
@@ -9,6 +9,8 @@ authors=[
 ]
 license ="LGPL-3.0-only"
 dependencies = [
+    "pytest>=9.0.2",
+    "pytest-mock>=3.15.1",
     "python-dateutil",
 ]
 
