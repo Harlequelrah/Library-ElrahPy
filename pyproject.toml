@@ -1,0 +1,21 @@
+[project]
+name = "elrahpy"
+version = "0.1.7"
+description = "Package pour renforcer mes compétences, améliorer ma productivité et partager mon expertise avec la communauté"
+readme = "README.md"
+requires-python = ">=3.14"
+authors=[
+{name="Harlequelrah",email="maximeatsoudegbovi@gmail.com"}
+]
+license ="LGPL-3.0-only"
+dependencies = [
+    "python-dateutil",
+]
+
+[project.urls]
+Repository="https://github.com/Harlequelrah/Library-ElrahPy"
+Documentation="https://harlequelrah.github.io/Library-ElrahPy/docs/documentation"
+
+[build-system]
+requires=["hatchling"]
+build-backend = "hatchling.build"
