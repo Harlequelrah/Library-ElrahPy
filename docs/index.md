@@ -1,6 +1,6 @@
 ---
 layout: default
-title  : elrahpy documentation
+title  : elrahpy 
 ---
 
 # Documentation
