@@ -1,8 +1,3 @@
----
-layout: default
-title  : elrahpy 
----
-
 # Documentation
 
 Ce package contient plusieurs modules utiles pour divers calculs et manipulations de données. Voici un aperçu de leurs fonctionnalités.
