@@ -1,3 +1,8 @@
+---
+layout: default
+theme: jekyll-theme-hacker
+---
+
 # Documentation
 
 Ce package contient plusieurs modules utiles pour divers calculs et manipulations de données. Voici un aperçu de leurs fonctionnalités.
