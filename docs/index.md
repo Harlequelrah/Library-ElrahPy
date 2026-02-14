@@ -2,6 +2,8 @@
 
 Ce package contient plusieurs modules utiles pour divers calculs et manipulations de données. Voici un aperçu de leurs fonctionnalités.
 
+**Lien** : [Github](https://github.com/Harlequelrah/Library-ElrahPy/)
+
 ## I- Module intkit
 
 ### 1. Sous Module `math_primes`
@@ -14,11 +16,11 @@ Le module `math_primes` contient des fonctions pour effectuer des opérations li
 
     - `number` (**int**) : Le nombre entier à vérifier.
 
-  - **sortie** !
+  - **sortie** :
 
     - `bool` : `True` si `number` est premier, sinon `False`.
 
-  -**exemple** :
+  - **exemple** :
 
   ```python
   from elrahpy.intkit.math_primes import is_prime
