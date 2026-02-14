@@ -1,4 +1,8 @@
 title: ElrahPy Documentation
 description: Package python utilitaire
-theme: jekyll-theme-hacker
+remote_theme: just-the-docs/just-the-docs
+
+plugins:
+  - jekyll-remote-theme
+
 include: [docs]
