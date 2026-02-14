@@ -1,0 +1,6 @@
+title: ElrahPy Documentation
+description: Package python utilitaire
+remote_theme: pages-themes/Hacker
+
+# Si vous utilisez le dossier /docs pour vos fichiers
+include: [docs]
