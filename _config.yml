@@ -2,4 +2,5 @@ title: ElrahPy Documentation
 description: Package python utilitaire
 theme : hacker
 
-include: [docs]
+show_downloads: true
+
