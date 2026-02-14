@@ -1,4 +1,4 @@
 title: ElrahPy Documentation
 description: Package python utilitaire
-remote_theme: pages-themes/hacker
+theme: jekyll-theme-hacker
 include: [docs]
