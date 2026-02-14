@@ -23,7 +23,8 @@ Passionné par la programmation et le développement en Python, je crée une bib
 # Documentation
 
 Toute la documentation se trouve dans le /docs
-et sur `https://elrahpy.elrah.tech/`
+
+**Lien** : ![Documentation](docs/index)
 
 
 ## Test
